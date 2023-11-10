@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧮 Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="content-calculator">
+            <div class="screen">
+                <div class="results"></div>
+                    <input type="text" id="input-result" readonly>
+                <div class="star-deco"><img src="./Assets/star.png" alt=""></div>
+            </div>
+            <div class="buttons">
+                <div class="button-numbers">
+                    <div class="nums">
+                        <button class="onclick" onclick="addNumber(1)">1</button>
+                        <button class="onclick" onclick="addNumber(2)">2</button>
+                        <button class="onclick" onclick="addNumber(3)">3</button>
+                        <button class="onclick" onclick="addNumber(4)">4</button>
+                        <button class="onclick" onclick="addNumber(5)">5</button>
+                        <button class="onclick" onclick="addNumber(6)">6</button>
+                        <button class="onclick" onclick="addNumber(7)">7</button>
+                        <button class="onclick" onclick="addNumber(8)">8</button>
+                        <button class="onclick" onclick="addNumber(9)">9</button>
+                    </div>
+                    <div class="zero-dot">
+                        <button class="zero" onclick="addNumber(0)">0</button>
+                        <button class="dot" onclick="addNumber('.')">.</button>
+                    </div>
+                </div>
+                
+                <div class="operators">
+                    <div class="clear">
+                        <button class="clear-button" onclick="clear()">🌼</button>
+                    </div>
+                    <div class="operations">
+                        <button class="signs" onclick="addOperation('+')">+</button>
+                        <button class="signs" onclick="addOperation('-')">-</button>
+                        <button class="signs" onclick="addOperation('*')">x</button>
+                        <button class="signs" onclick="addOperation('/')">÷</button>
+                    </div>
+                    <div class="equals">
+                        <button class="equals-button" onclick="equals()">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

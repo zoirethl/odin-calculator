@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@font-face {
+    font-family: 'Merkur';
+    src: url('./Assets/merkur-font/Merkur-j147.otf');
+}
+
+body {
+    background-color: #fad5d5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Assets/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.calculator {
+    width: 585px;
+    height: 650px;
+    background-color: #fbd188;
+    border-radius: 15%;
+    border: 0.5rem solid #071149;    
+}
+
+.content-calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.screen {
+    width: 400px;
+    height: 150px;
+    display: flex;
+    background-color: #7b97c2;
+    border-radius: 40px;
+    border: 0.5rem solid #071149 ;
+    margin: 2rem 2rem;
+}
+.results, input[type="text"] {
+    
+    flex: 1;
+    height: 8rem; 
+}
+input[type="text"] {
+    width: 280px;
+    border: none;
+    padding: 0;
+    outline: none;
+    background-color: transparent;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    font-size: 90px;
+    text-align: right;
+    font-family: Merkur;
+    color: #fad297;
+}
+.star-deco {
+    flex: initial;
+    width: 8rem;
+    border-radius: 16%;
+}
+.star-deco img {
+    margin-top: 1rem;
+    width: 8rem;
+    align-items: center;
+    transform: rotate(90deg);
+}
+
+/******************** buttons area ****************/
+.buttons {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 400px;
+}
+
+.button-numbers,
+.zero-dot {
+    margin: 1rem;
+}
+.button-numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.nums {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    width: 100%;
+    height: 75%;
+}
+.nums button {
+    width: 32.5%;
+    height: 33%;
+    margin: 0.2%;
+}
+button {
+    border: none;
+    margin: 4px;
+    border: 6px solid #f8a5c0;
+    box-shadow: 2px 3px #071149;
+    border-radius: 25px;
+    background-color: #faf0f0;
+    font-family: Agbalumo;
+    color: #799ab1;
+    font-size: 28px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #f8a5c0;
+    color: #071149;
+    transform: translateY(-0.4rem);
+}
+
+.zero-dot{
+    width: 100%;
+    height: 30%;
+    margin: 0;
+}
+.zero {
+    width: 65%;
+    height: 100%;
+    margin-left: -1px;
+}
+.dot {
+    width: 30%;
+    height: 100%;
+}
+
+/*************** Operators Style ********************/
+
+.operators {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clear {
+    width: 100%;
+    height: 25%;
+    margin-bottom: 10px;
+}
+
+.clear-button {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.equals {
+    height: 50%;
+    width: 100%;
+    margin-top: 10px;
+}
+.equals-button {
+    width: 100%;
+    height: 100%;
+    background-color: #fad297;
+    margin: 0;
+}
+
+.operations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 6px;
+}
+
+.signs {
+    width: 36px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
