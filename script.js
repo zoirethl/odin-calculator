@@ -3,9 +3,15 @@ let storedValue = 0;
 let currentOperation = '';
 let decimalAdded = false;
 
+function playSound(audioSrc) {
+    var sound = new Audio(audioSrc);
+    sound.play();
+}
+
 function addNumber(number) { //writes the number o the button clicked
     currentInput.value += number;
     decimalAdded = false;
+    playSound("./Assets/mixkit-interface-click-1126.wav");
 }
 
 function addOperation(operation) { //writes the operator o the button clicked
@@ -13,6 +19,7 @@ function addOperation(operation) { //writes the operator o the button clicked
     currentInput.value = ''; //Clears the content of the input to type a new number
     currentOperation = operation; 
     decimalAdded = false;
+    playSound("./Assets/mixkit-interface-click-1126.wav");
 }
 
 function equals (){
@@ -30,6 +37,7 @@ function equals (){
     currentInput.value = storedValue;
     currentOperation = '';
     decimalAdded = currentInput.value.includes('.');
+    playSound("./Assets/mixkit-pebbles-click-1128.wav");
 }
 
 const add = function(numA, numB) {
