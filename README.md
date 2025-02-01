@@ -17,10 +17,10 @@ CSS
 JavaScript
 
 ## Live Preview
-You can see a live demo of the calculator [here].
+You can see a live demo of the calculator [here](https://zoirethl.github.io/odin-calculator/).
 
 ## Screenshots
-![Calculator screenshot]
+![image](https://github.com/user-attachments/assets/b71adcab-5714-4718-9d4a-aae811204240)
 
 
 ## Acknowledgements
